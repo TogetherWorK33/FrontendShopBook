@@ -1,0 +1,38 @@
+.content-header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.content-header-block {
+  width: 1300px;
+  height: 100px;
+  background-color: black;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.content-element-logo {
+  display: flex;
+  width: 230px;
+  justify-content: space-between;
+  color: white;
+}
+
+.element-image {
+  height: 70px;
+  width: 70px;
+}
+
+.content-element-btn {
+  width: 300px;
+  display: flex;
+  justify-content: space-around;
+  color: white;
+}
+
+.content-element-auth {
+  color: white;
+}
