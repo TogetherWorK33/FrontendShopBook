@@ -1,22 +1,28 @@
+import { Link } from 'react-router-dom';
 import './header.css';
 import Logo from '../../assets/Logo.png';
+
 const Header = () => {
   return (
     <div className="content-header">
       <div className="content-header-block">
         <div className="content-element-logo">
           <img src={Logo} alt="" className="element-image" />
-          <h2>Магазин книг</h2>
+          <Link className="element-link">Магазин книг</Link>
         </div>
 
         <div className="content-element-btn">
-          <h3>Главная</h3>
-          <h3>Каталог</h3>
-          <h3>Заказы</h3>
+          <Link to="/" className="element-link">
+            Главная
+          </Link>
+          <Link className="element-link">Каталог</Link>
+          <Link className="element-link">Заказы</Link>
         </div>
 
         <div className="content-element-auth">
-          <h3>Войти</h3>
+          <Link to="/Auth" className="element-link">
+            Войти
+          </Link>
         </div>
       </div>
     </div>
